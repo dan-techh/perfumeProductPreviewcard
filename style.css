@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: rgb(224, 210, 183);
+}
+.heading{
+    line-height: 30px;
+    margin-bottom: 12px;
+}
+p{
+    font-size: 14px;
+    line-height: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+}
+
+.image{
+    background: url(images/image-product-desktop.jpg);
+    height: 350px;
+    width: 250px;
+    background-size: cover;
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
+    /* margin-right: 10px; */
+    
+}
+
+.main{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    border: 0px solid black;
+    border-radius: 15px;
+    width: fit-content;
+}
+
+.product-content{
+    /* margin-left: 10px; */
+    background: white;
+    padding: 15px;
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+button{
+    padding: 10px 50px 10px 50px;
+    font-weight: bold;
+    background: hsl(158, 36%, 37%);
+    color: white;
+    border: none;
+    border-radius: 8px;
+}
+
+.price{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.price{
+    color: hsl(158, 36%, 37%);
+    font-family: monospace;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.price .former-price{
+    font-size: 18px;
+    color: hsl(212, 21%, 14%);
+    display: flex;
+    align-items: center;
+   
+}
+
+hr{
+    border: 1px solid hsl(212, 21%, 14%);
+    position: absolute;
+    width: 68px;
+}
+
+@media only screen and (max-width:850px)  {
+    .main{
+        display: block;
+    }
+    .image{
+        border-top-right-radius: 15px;
+        border-bottom-left-radius: 0px;
+    }
+    .product-content{
+        border-bottom-left-radius: 15px;
+        border-top-right-radius: 0px;
+    }
+}
+
+
